@@ -1,0 +1,65 @@
+#grilla {
+    display: grid;
+    grid-template-areas:
+      "nav header header"
+      "nav wow publicidad"
+      "nav lol publicidad"
+      "nav fortnite publicidad"
+      "nav footer footer";
+    grid-template-rows: 100px 1fr 1fr 1fr 75px;
+    grid-template-columns: 20% auto 15%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+  }
+  .border {
+    border: 2px solid black;
+  }
+  header {
+    grid-area: header;
+    background-color: cornflowerblue;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: space-evenly;
+  }
+  footer {
+    grid-area: footer;
+  }
+  section#wow {
+    grid-area: wow;
+    background-color: red;
+  }
+  section#lol {
+    grid-area: lol;
+    background-color: blue;
+  }
+  section#fortnite {
+    grid-area: fortnite;
+    background-color: chocolate;
+  }
+  nav {
+    grid-area: nav;
+  }
+  aside {
+    grid-area: publicidad;
+  }
+  .grid {
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+  }
+  .imagenes {
+    width: 910px;
+    height: 200px;
+    display: block;
+  }
+ .logo {
+   width: 80px;
+   height: 80px;
+   position: relative;
+   top: -42.5px;
+   left: 10px;
+ }
